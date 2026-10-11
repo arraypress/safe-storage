@@ -1,0 +1,41 @@
+{
+  "name": "@arraypress/safe-storage",
+  "version": "1.0.0",
+  "description": "Browser storage (localStorage / sessionStorage) that never throws. When storage is off (a private window, blocked site data) even touching it throws: here reads give null and writes do nothing, so the page carries on without it.",
+  "type": "module",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "types": "./src/index.d.ts"
+    }
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test tests/"
+  },
+  "keywords": [
+    "localstorage",
+    "sessionstorage",
+    "storage",
+    "web-storage",
+    "private-browsing",
+    "safe",
+    "browser"
+  ],
+  "author": "David Sherlock",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arraypress/safe-storage.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
